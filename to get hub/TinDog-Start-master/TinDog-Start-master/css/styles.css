@@ -1,0 +1,186 @@
+ body {
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-weight: bolder;
+ }
+
+ .big-head,
+ h2 {
+   line-height: 1.5;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 3.5rem;
+ }
+
+
+
+
+ /* title */
+
+ #title .container-fluid {
+   padding: 3% 15% 6%;
+   text-align: left;
+ }
+
+
+ /* padding */
+ .container-fluid {
+   padding: 7% 15%;
+ }
+
+
+ /* section-colors */
+
+ .section-red {
+   background-color: #ff4c68;
+   color: #fff;
+ }
+
+ .section-white {
+   background-color: #fff;
+ }
+
+ /* nav */
+
+ .navbar {
+   padding-bottom: 4.5rem;
+ }
+
+ .nav-item {
+   padding: 0 18px;
+   font-weight: 100;
+ }
+
+ .navbar-brand {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: aliceblue;
+
+ }
+
+
+ /* buttons */
+
+ .btn {
+   margin: 5% 3% 0%;
+ }
+
+
+ /* image-phone */
+
+ .dddd {
+   width: 60%;
+   transform: rotate(25deg);
+   position: absolute;
+   z-index: 1;
+   right: 7%;
+
+
+ }
+
+
+
+ /* features section */
+
+ #features {
+   z-index: 2;
+   position: relative;
+ }
+
+ .i {
+   font-size: 4rem;
+   color: #ef8172;
+   padding-bottom: 1rem;
+
+ }
+
+ #features p {
+   color: #8f8f8f;
+   width: 100%;
+
+ }
+
+ .fea {
+   padding: 6% 0%;
+ }
+
+ .i:hover {
+   color: #ff4c68;
+
+ }
+
+
+
+ /* <!-- Testimonials --> */
+
+ #testimonials,
+ #press {
+   background-color: #ef8172;
+ }
+
+
+ .dog {
+   width: 10%;
+   border-radius: 100%;
+   margin: 20px;
+ }
+
+ /* press-section */
+
+ #press {
+
+   padding-bottom: 3%;
+ }
+
+ #press img {
+   width: 15%;
+   margin: 20px 20px 50px;
+
+ }
+
+ /* paracing */
+
+
+
+ .pracing {
+   padding: 3% 2%;
+ }
+
+ /* call to action  */
+
+
+
+ /* footer */
+
+
+
+ #footer i {
+   margin: 20px 16px 15px;
+ }
+
+
+ @media (max-width:990px) {
+
+   .container-fluid {
+     padding: 7% 15%;
+   }
+
+   .dddd {
+     width: 60%;
+     transform: rotate(0deg);
+     position: static;
+     z-index: 0;
+     top: 0;
+     left: 0;
+   }
+
+
+ }
