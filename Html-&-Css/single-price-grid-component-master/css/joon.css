@@ -1,0 +1,97 @@
+body , .one-1 {
+  background-color: white;
+  padding: 0%;
+  margin: 0;
+  font-size: 1rem;
+  font-family:  'Karla', sans-serif;
+  line-height: 1.5;
+}
+
+
+body , .one-1 , button , .dad {
+  color: white;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+}
+
+div {
+  padding: 0%;
+  margin: 0% auto;
+}
+h3  {
+  color: #33927b;
+}
+
+h2 ,h3 , h4 {
+  font-weight: 700;
+}
+
+.secc {
+  color: hsl(71, 73%, 54%);
+}
+
+.one-1 p {
+  color:   hsl(0deg 0% 54%);
+}
+
+.two-2 {
+  background-color: #33927b;
+}
+
+
+.dad{
+  font-size: 1.5rem;
+  font-weight: bold;    
+}
+
+.dod {
+  color:hsl(204, 43%, 93%); 
+  font-weight: 100;
+}
+
+
+.one-1 , .two-2 , .three-3 {
+  padding: 7% 8%;
+}
+
+.three-3 {
+  background-color: #3eb195;
+  padding-right: 37%;
+}
+
+
+@media (min-width:668px) {
+
+  p {
+    max-width: 553px;
+  }
+  .three-3 {
+    padding-right: 4%;
+  }
+  .three-3 ,.two-2 {
+    width: 33%;
+    display: table-cell;
+    margin: 0%;
+  }
+  .main {
+    background-color: azure;
+    padding: 4% 251px;
+  }
+  .one-1 {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .two-2 {
+    border-bottom-left-radius: 8px;
+  }
+
+  .three-3 {
+    border-bottom-right-radius: 8px;
+  }
+}
