@@ -1,0 +1,323 @@
+
+/* global rules */
+:root {
+  --main-color:#10cab7;
+  --secan-color:#2c4755;
+  --section-padding:60px 0;
+  --section-color1:#f6f6f6;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Spes-heading */
+.spes-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  margin: 0%;
+  letter-spacing: -3px;
+}
+
+.spes-heading + p {
+  margin:-30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #779797;
+}
+
+@media (max-width:767px) {
+  .spes-heading {
+    font-size: 60px;
+  }
+  
+  .spes-heading + p {
+    margin-top: -20px;
+  }
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* End globale rules */
+
+.main {
+  background-color: var(--section-color1);
+}
+
+.coun {
+  margin: 0 auto;
+  padding: 0% 15px;
+}
+
+/* small */
+
+@media (min-width:768px) {
+  .coun {
+    width: 750px;
+  }
+}
+
+ /* mid */
+
+@media (min-width:992px) {
+  .coun {
+    width: 970px;
+  }
+}
+
+ /* lar */
+
+@media (min-width:1200px) {
+  .coun {
+    width: 1170px;
+  }
+}
+
+
+/* end */
+
+
+.header .coun {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 55px;
+}
+
+.header .links {
+  position: relative;
+}
+
+.header .icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  background-color: #eee;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+
+.header .links:hover ul {
+  display: block;
+}
+
+.header .links ul ::before{
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #eee transparent;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+}
+
+.header .links ul li a {
+  text-decoration: none;
+  padding: 15px;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+.header .links ul li:not(:last-child) {
+  border-bottom: rgb(223, 217, 217);
+  border-bottom: 1px solid #ddd;
+}
+
+.header .links ul li a:hover {
+  padding-left: 25px;
+}
+
+
+/* landing section */
+
+
+.landing {
+  background-image: url('../imag/mountain-gb224bb9f4_1920.jpg');
+  background-size: cover;
+  height: calc(100vh - 64px);
+}
+
+.landing .text-landing {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: black;
+  text-align: center;
+  transform: translate(-50% , -50%);
+  width: 320px;
+  max-width: 100%;
+}
+
+.landing h1 {
+  margin: 0%;
+  font-weight: bold;
+  font-size: 50px;
+  color:var(--main-color);
+}
+
+.landing p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* feaut */
+
+.feut {
+  padding: var(--section-padding);
+  background-color: var(--section-color1);
+}
+
+.feut .coun {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px , 1fr) );
+  grid-gap: 20px;
+}
+
+.feut .feat {
+  padding: 20px; 
+  text-align: center;
+}
+
+.feut .feat i {
+  color: var(--main-color);
+  font-size: x-large;
+}
+
+.feut .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+
+.feut .feat p {
+  line-height: 1.6;
+}
+
+
+/* Servises */
+
+.serv {
+  padding: var(--section-padding);
+  background-color: var(--section-color1);
+}
+
+.serve .serve-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px , 1fr) );
+  grid-gap: 30px;
+  margin-top: 100px;
+}
+
+.serve .serve-content .srv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@media (max-width:767px) {
+  .serve .serve-content .srv {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.serve .serve-content .srv i {
+  color: var(--main-color);
+  flex-basis: 60px;
+  font-size: x-large;
+}
+
+.serve .serve-content .srv .text {
+  flex: 1;
+}
+
+.serve .serve-content .srv .text h3 {
+  margin: 0 0 19px;
+}
+
+.serve .serve-content .srv .text p {
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.serve .serve-content .imgg {
+  text-align: center;
+  position: relative;
+}
+
+.serve .serve-content .imgg::before {
+  content: "";
+  background-color: var(--secan-color);
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  height: calc(100% + 100px);
+  right: 0;
+}
+
+.serve img {
+  width: 260px;
+  height: 350px;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width:1199px) {
+  .imggg {
+    display: none;
+  }
+}
+
+/* proflile */
+
+.port {
+  background-color: var(--section-color1);
+  padding: var(--section-padding);
+}
+
+.port .por-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px , 1fr) );
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+
+.port img {
+  width: 100%;
+}
+
+.port .card {
+  background-color: white;
+}
+
+.port .info {
+  padding: 20px;
+}
+
+.port h3 {
+  margin: 0%;
+}
+
+.port p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 0%;
+}
