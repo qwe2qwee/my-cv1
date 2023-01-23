@@ -5,6 +5,9 @@
   --secan-color:#2c4755;
   --section-padding:60px 0;
   --section-color1:#f6f6f6;
+  --line-height:1.6;
+  --color-p:#333;
+  --hadd-color:#ebeced;
 }
 
 *{
@@ -15,7 +18,7 @@
 
 /* Spes-heading */
 .spes-heading {
-  color: #ebeced;
+  color: var(--hadd-color);
   font-size: 100px;
   text-align: center;
   font-weight: 800;
@@ -177,7 +180,8 @@ body {
 
 .landing p {
   font-size: 19px;
-  line-height: 1.8;
+  line-height: var(--line-height);
+  color: var(--color-p);
 }
 
 /* feaut */
@@ -209,7 +213,8 @@ body {
 }
 
 .feut .feat p {
-  line-height: 1.6;
+  line-height: var(--line-height);
+  color: var(--color-p);
 }
 
 
@@ -254,9 +259,9 @@ body {
 }
 
 .serve .serve-content .srv .text p {
-  color: #333;
+  color: var(--color-p);
   font-weight: 300;
-  line-height: 1.6;
+  line-height: var(--line-height);
 }
 .serve .serve-content .imgg {
   text-align: center;
@@ -317,7 +322,98 @@ body {
 }
 
 .port p {
-  color: #333;
-  line-height: 1.5;
+  color: var(--color-p);
+  line-height: var(--line-height);
   margin-bottom: 0%;
+}
+
+
+/* About */
+
+.About {
+  padding:var(--section-padding) ;
+  background-color: var(--section-color1);
+}
+
+.About .img1 img {
+width: 340px;
+position: relative;
+z-index: 2;
+}
+
+.about-content {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width:991px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.About .img1 {
+  width: 360px;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width:991px) {
+  .About .img1 {
+    margin: 0 auto 60px;
+  }
+}
+
+.About .img1::before {
+content: "";
+position: absolute;
+background-color: var(--hadd-color);
+height: calc(100% + 80px ) ;
+width: 43%;
+top: -40px;
+left: -20px;
+
+} 
+
+.About .img1::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -129px;
+  width: 120px;
+  height: calc(80% );
+  border-left: 80px solid var(--main-color);
+  border-bottom: 68px solid var(--main-color);
+}
+
+@media (max-width:991px) {
+.About .img1::after,
+.About .img1::before {
+  display: none;
+}
+}
+
+.about-content .text {
+  flex-basis: calc(100% - 500px);
+}
+
+.about-content .text p:first-of-type {
+font-weight: bold;
+margin-bottom: 50px;
+line-height:2;
+}
+
+.about-content .text hr {
+  width: 50%;
+  display: inline-block;
+  border-color: var(--main-color);
+}
+
+.about-content .text p:last-of-type {
+line-height: 2;
+font-weight: 300;
+color: var(--color-p);
 }
