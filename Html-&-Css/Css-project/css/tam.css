@@ -331,7 +331,7 @@ body {
 /* About */
 
 .About {
-  padding:var(--section-padding) ;
+  padding:var(--section-padding);
   background-color: var(--section-color1);
 }
 
@@ -375,7 +375,6 @@ height: calc(100% + 80px ) ;
 width: 43%;
 top: -40px;
 left: -20px;
-
 } 
 
 .About .img1::after {
@@ -392,7 +391,7 @@ left: -20px;
 @media (max-width:991px) {
 .About .img1::after,
 .About .img1::before {
-  display: none;
+ display: none;
 }
 }
 
@@ -416,4 +415,69 @@ line-height:2;
 line-height: 2;
 font-weight: 300;
 color: var(--color-p);
+}
+
+/* contact section */
+
+
+
+.contact {
+  padding: var(--section-padding);
+  background-color: var(--section-color1);
+}
+
+.contact .infoo {
+  padding: var(--section-padding);
+  text-align: center;
+}
+
+.contact .infoo .lebal {
+  font-size: 35px;
+  color: var(--secan-color);
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+
+.contact .infoo .linkk {
+  font-weight: 800;
+  font-size: 35px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.contact .infoo .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.contact .infoo .social i {
+  margin-left:10px;
+  color: var(--secan-color);
+}
+
+@media (max-width: 767px) {
+  .contact .infoo .lebal,
+  .contact .infoo .linkk {
+    font-size: 25px;
+  }
+  
+}
+
+
+/* footer */
+
+.footer {
+  background-color: var(--secan-color);
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
+
+.footer span {
+  color: var(--main-color);
+  font-weight: bold;
 }
