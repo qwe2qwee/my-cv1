@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.coun {
+  padding: 3% 10%;
+
+}
+
+i{
+  color: gold;
+  padding: 0 6px;
+}
+
+img {
+  width: 48px;
+  border-radius: 48%;
+}
+
+.main {
+  background-color: hsl(300, 24%, 96%);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.upp {
+  display: flex;
+}
+
+.Right {
+  display: grid;
+  padding-left: 8%;
+  padding-top: 0%;
+}
+
+.card-up {
+  background-color:hsl(303deg 19% 61% / 34%);
+  text-align: center;
+  padding: 3%;
+  border-radius: 7px;
+}
+
+.card-up p {
+  margin: 0%;
+  margin: 0%;
+  font-weight: 400;
+  font-size: large;
+}
+
+.dwon {
+  padding: 5%;
+} 
+
+.card-up , .card-down {
+  margin: 18px 0px;
+  border-radius: 7px;
+}
+
+h1 , .card-up {
+  color: hsl(300, 43%, 22%);
+}
+
+.d {
+  color: hsl(333, 80%, 67%);
+}
+
+.card-down {
+  background-color: hsl(300, 43%, 22%);
+  padding: 7%;
+  text-align: left;
+  color: white;
+}
+
+
+
+@media (min-width:640px) {
+  .coun {
+    padding: 3% 19%;
+  }
+}
+
+@media (min-width:800px) {
+  .card-down{
+    margin: 6px 9px;
+    padding: 5%;
+    width: 47%;
+  } 
+  
+  .dwonn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .coun {
+    padding: 3% 7%;
+  }
+  
+}
+
+@media (min-width:992px) {
+
+  .main {
+    max-width: 1400px;
+  }
+
+  .coun {
+    padding: 2% 6%;
+  }
+  
+  h1 {
+    line-height: 1;
+    font-size: 3rem !important;
+    font-weight: bolder;
+  }
+  
+  i {
+    padding: 0 1%;
+  }
+  
+  .uppp {
+    display: flex;
+  }
+  
+  .left-te , .right-card {
+    width: 50%;
+  }
+  
+  .card-up p {
+    display: inline-block;
+    padding-left: 7%;
+  }
+  
+  .left-te p ,h1 {
+    width: 70%;
+  }
+  
+  .card-up {
+    width: 77%;
+  }
+  
+  .A {
+    position: relative;
+    left: 25px;
+  }
+  
+  .B {
+    position: relative;
+    left: 50px;
+  }
+  
+  .dwonn {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card-down {
+    padding: 2%;
+    width: 30%;
+    position: relative;
+    margin: 0%;
+    margin-right: 17px;
+  }
+  
+  .A-down {
+    bottom: 15px;
+  }
+  
+  .B-down {
+    bottom: 30px;
+  }
+}
+
