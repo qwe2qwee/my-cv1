@@ -1,0 +1,47 @@
+body {
+  background-color: #393E46;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'lobster',cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+
+}
+
+p {
+  font-size: 2rem;
+  font-family:cursive;
+
+}
+
+p,h1 {
+  color: #4ECCA3;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin: 5%;
+  color: EEE;
+  font-family: cursive;
+
+}
+
+
+
+
+.main {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dicee {
+
+  display: inline-block;
+}
