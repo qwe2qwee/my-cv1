@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white : #fff;
+  --left-color:#978379;
+  --rghit-color:#4a4f58;
+  --hover-width:75%;
+  --other-width:25%;
+  --speed:1000ms;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin:0; 
+}
+
+h1 {
+  position: absolute;
+  color: var(--white);
+  font-size: 4rem;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid var(--white) 0.2rem;
+  width: 25rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+.countainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url('https://images6.alphacoders.com/589/589730.jpg');
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-color);
+  border-color: var(--left-color);
+}
+
+.split.right .btn:hover {
+  background-color: var(--rghit-color);
+  border-color: var(--rghit-color);
+  
+}
+
+
+.split.left::before {
+  background-color:#b0988bc4 ;
+}
+
+
+.split.right {
+  right: 0;
+  background: url('https://images6.alphacoders.com/595/595866.jpg');
+}
+
+.split.right::before {
+  background-color: #5f6571c2;
+}
+
+.split.right , .split.left {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.split.left::before , .split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.split.left::before ,
+.split.right::before ,
+.split.right , 
+.split.left {
+  transition: var(--speed) ease;
+}
+
+
+.hover-left .left {
+  width:var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width:var(--hover-width) ;
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+@media  (max-width:800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+
+}

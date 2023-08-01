@@ -1,0 +1,282 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color:hsl(322, 100%, 66%);
+  --w-color:white;
+  --poin:pointer;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+h1,h2,h3{
+  font-family: 'Poppins', sans-serif;
+}
+
+.mon {
+  width: 100%;
+}
+
+
+@media (max-width:469px) {
+  
+}
+
+.coun {
+  padding: 5% 9%;
+}
+
+.back-top {
+  background-image: url('../images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 35%;
+}
+
+.header button {
+  padding: 1%;
+  width: 25%;
+  height: 31px;
+  border: none;
+  border-radius: 30px;
+}
+
+/* top-coun */
+
+.top-coun {
+  text-align: center;
+}
+
+ .bton {
+  margin: 28px auto;
+  padding: 15px 50px;
+  border-radius: 41px;
+  border-style: none;
+  background-color: var(--main-color);
+  color: var(--w-color);
+}
+
+
+
+.card-q {
+  margin: 48px auto;
+  box-shadow: 0px 0px 6px -1px hsl(322deg 92% 77% / 60%);
+  padding: 12%;
+  text-align: center;
+  border-radius: 13px;
+}
+
+.card-q p {
+  color: rgb(110, 110, 110);
+}
+
+.card-bottom {
+  text-align: center;
+  box-shadow:-2px -11px 9px -11px hsl(322deg 92% 77% / 60%);
+  border-radius: 13px;
+  padding: 4%;
+  position: relative;
+  top: 66px;
+  background-color: var(--w-color);
+}
+
+.card-bottom  button{
+  margin-top: 8px;
+}
+
+
+/* footer */
+
+
+.foot {
+  background-color: hsl(192, 100%, 9%);
+  color: var(--w-color);
+  padding-top: 134px;
+}  
+
+i {
+  font-size: 20px;
+}
+
+.foot ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+.foot .mm {
+  margin: 23px 0px;
+}
+
+.foot .mm li {
+  display: flex;
+}
+
+li div {
+  max-width: 330px;
+}
+
+.foot li {
+  list-style: none;
+  padding: 13px 0;
+}
+
+.foot .mm i {
+  padding-right: 21px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons div {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.icons div i {
+  outline-style: solid;
+  outline-width: thin;
+  padding: 4%;
+  border-radius: 50%;
+}
+
+.icons div i:hover {
+  color:var(--main-color) ;
+  outline-color:var(--main-color);
+}
+
+.icons div .f {
+  padding: 4% 6% ;
+}
+
+@media   (min-width:375px) and (max-width:457px) {
+  
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+  .header img {
+    width: 41%;
+  }
+  
+  .header button {
+    width: 35%;
+  }
+  
+  .coun {
+    padding: 5% 4%;
+  }
+  
+  .foot {
+    padding-top: 110px;
+  }
+}
+
+
+@media (min-width:992px) {
+  
+  .main {
+  max-width: 1400px;
+  }
+  
+  .coun {
+    padding: 4% 3%;
+  }
+  
+  .back-top {
+    background-image: url('../images/bg-hero-desktop.svg');
+  }
+  
+  .card-q , .top-coun ,.foot {
+    display: flex;
+    text-align: left;
+  }
+  
+  .card-q  {
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    padding: 3% 9%;
+  }
+  
+  .card-q div {
+    padding-top: 11%;
+  }
+  
+  .bton:hover {
+    background-color:hsl(322deg 100% 81%); 
+    cursor: var(--poin);
+  }
+  
+  .nn {
+    flex-direction: row;
+  }
+  
+  .header button {
+    width: 22%;
+    height: 56px;
+  }
+  
+  .header button:hover {
+    cursor: var(--poin);
+  }
+  
+  .header img {
+    width: 31%;
+  }
+  
+  .card-q img , .im , .text {
+    width: 50%;
+  }
+  
+  .top-coun .text {
+    padding-right: 14%;
+  }
+  
+  .card-bottom {
+    width: 62%;
+    margin: auto;
+    padding: 3%;
+    top: 89px;
+  }
+  
+  .non{
+    padding-top: 6% !important;
+  }
+  
+  .non li:hover {
+    text-decoration-line: underline;
+    text-underline-position: under;
+    cursor: var(--poin);
+  }
+  
+  .foot ul {
+    padding-right: 6%;
+  }
+  
+  .foot .icons {
+    padding-top: 11%;
+    text-align: left;
+  }
+  
+  .foot .icons i:hover {
+    cursor: var(--poin);
+  }
+}

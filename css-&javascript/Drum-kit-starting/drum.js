@@ -1,9 +1,9 @@
 
-var goo=document.querySelectorAll(".drum").length;
+var Drums=document.querySelectorAll(".drum").length;
 
 
-for (var i = 0; i < goo; i++) {
-  document.querySelectorAll(".drum")[i].addEventListener("click",function  () {
+for (var i = 0; i < Drums; i++) {
+  document.querySelectorAll(".drum").addEventListener("click",function  () {
     var fffa= this.innerHTML;
 
     uuoo(fffa);
@@ -15,8 +15,7 @@ document.addEventListener("keypress" ,function ( event) {
 
   uuoo(event.key);
 
-}
-)
+})
 function uuoo(key) {
 
       switch (key) {
@@ -48,7 +47,7 @@ function uuoo(key) {
          var ll = new Audio('sounds/tom-4.mp3');
          ll.play()
          break;
-        default:    console.log(fffa);
+        default: console.log("try again");
       }
 
 }
