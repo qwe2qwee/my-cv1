@@ -324,6 +324,7 @@ section.about .countainer {
 
 section.about p {
   margin-bottom: 1rem;
+  max-width: 466px;
 }
 
 section.about .countainer .read-more-content {
@@ -426,9 +427,9 @@ section.skills .item:nth-child(4) .progress-bar .progress {
   width: 60%;
 }
 
-/* section.skills .item:nth-child(5) .progress-bar .progress {
+section.skills .item:nth-child(5) .progress-bar .progress {
   width: 60%;
-} */
+} 
 
 section.skills .b:nth-child(1) .progress-bar .progress {
   width: 20%;
@@ -853,6 +854,7 @@ footer .countainer .socials a:hover {
 
   section.about .countainer p {
     text-align: left;
+   
   }
 
   /* skills section */
